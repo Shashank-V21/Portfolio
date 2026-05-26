@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import CursorGlow from "../components/animations/CursorGlow";
 import Header from "../components/layout/Header";
 import Hero from "../components/sections/Hero";
@@ -60,6 +61,9 @@ export default function App() {
         {/* Creative Footer */}
         <Footer isDarkMode={isDarkMode} />
       </div>
+      
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </>
   );
 }
